@@ -28,7 +28,7 @@ public class DebugScreen : MonoBehaviour {
 
         string debugText = "open-Craft";
         debugText += "\n";
-        debugText += "PUBLIC ALPHA 5";
+        debugText += "Alpha 6";
         debugText += "\n";
         debugText += frameRate + " fps";
         debugText += "\n\n";

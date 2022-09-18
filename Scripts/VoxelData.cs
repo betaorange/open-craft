@@ -16,7 +16,7 @@ public static class VoxelData {
 
     public static readonly int ViewDistanceInChunks = 5;
 
-    public static readonly int TextureAtlasSizeInBlocks = 4;
+    public static readonly int TextureAtlasSizeInBlocks = 16;
     public static float NormalizedBlockTextureSize {
 
         get { return 1f / (float)TextureAtlasSizeInBlocks; }
@@ -49,8 +49,6 @@ public static class VoxelData {
 
 	public static readonly int[,] voxelTris = new int[6,4] {
 
-
-		// 0 1 2 2 1 3
 		{0, 3, 1, 2}, // back
 		{5, 6, 4, 7}, // front
 		{3, 7, 2, 6}, // top

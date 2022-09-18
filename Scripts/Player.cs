@@ -81,7 +81,7 @@ public class Player : MonoBehaviour {
         else
             velocity = ((transform.forward * vertical) + (transform.right * horizontal)) * Time.fixedDeltaTime * walkSpeed;
 
-        // if falling or jumping
+        // falling / jumping
         velocity += Vector3.up * verticalMomentum * Time.fixedDeltaTime;
 
         if ((velocity.z > 0 && front) || (velocity.z < 0 && back))
